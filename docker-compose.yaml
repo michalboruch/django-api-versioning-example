@@ -1,0 +1,9 @@
+version: '2'
+services:
+  versioned-api:
+    build: .
+    volumes:
+      - .:/usr/src/app
+    ports:
+      - "8000:8000"
+    command: ./run.sh
